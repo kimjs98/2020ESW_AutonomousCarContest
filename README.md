@@ -30,6 +30,26 @@
 
 - [전체 미션 수행 동영상](https://www.youtube.com/watch?v=f_BQ3XMBDCw)
 
+<p align="center"><img src="./Images/highlevel_road.gif"></p> 
+<p align="center"> < 고가 도로 주행 테스트 ></p>  
 
+<p align="center"><img src="./Images/basic_driving.gif" ></p>  
+<p align="center"> < Lane Keeping 알고리즘 테스트 ></p>  
+
+<p align="center"><img src="./Images/circular.gif" ></p>  
+<p align="center"> < 회전 교차로 주행 테스트 ></p>
+
+<p align="center"><img src="./Images/horizontal.gif" width="200px" height="320px" hspace = "10px"><img src="Images/vertical.gif" width="200px" height="320px"></p>  
+<p align="center"> < 수평, 수직 주차 테스트 ></p>
+ 
+
+<p align="center"><img src="./Images/tunnel.gif"></p> 
+<p align="center"> < 터널 통과 테스트 ></p>  
+
+<p align="center"><img src="./Images/multiplelines.gif"></p> 
+<p align="center"> < 3차선 도로 장애물 통과 테스트 ></p>  
+
+<p align="center"><img src="./Images/trafficlight.gif"></p> 
+<p align="center"> < 신호등 통과 테스트 ></p> 
 
 
