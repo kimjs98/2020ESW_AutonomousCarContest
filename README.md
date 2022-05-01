@@ -53,3 +53,30 @@
 <p align="center"> < 신호등 통과 테스트 ></p> 
 
 
+## 작품 설명  
+
+### 하드웨어 품목  
+
+|Hardware Type|Description|  
+|:---:|:---:|
+|모형자동차|현대모비스 제공||  
+
+### Development Environment
+
+
+- 노트북에 Ubuntu 16.04를 설치하여 Linux 환경을 제공하는 Host Pc로 활용하였고, 터미널 편집기를 통하여 소스코드를 작성하였다. 모형자동차(Target Board)는 Embedded Linux 기반의 OS(Operating System)를 사용하며, Serial 통신 및 Ethernet을 통해 Host Pc와 상호작용한다.
+
+- Serial 통신을 통해 Target Board의 터미널을 확인함으로써 센서값 ,영상 픽셀값 등을 출력하여 디버깅에 활용하였으며 Ethernet을 통해 Host Pc에서 작성한 실행파일의 데이터를 Target board에 전송하였다. 
+
+- 기본적으로 C언어를 통해 소스코드를 작성하였으며, 차선인식 및 신호등과 같이 영상처리가 필요한 부분은 C++언어를 활용하였다. 이때 주어진 OpenCV 라이브러리의 함수를 적극적으로 활용하여 작성하였다.
+
+<p align="center"><img src="images/development_environment.png"></p> 
+<p align="center"> < Software Architecture ></p>
+
+
+### Program Flow Chart
+
+- 쓰레드간의 메모리충돌을 막기 위해 mutex 잠금을 통해 동기화하였으며, 조건변수를 활용하여 쓰레드 간의 호출에 이용하였다. 이때 각 쓰레드는 잠금 되었다가 호출에 따라 활성화와 비활성화를 반복한다. 전체 쓰레드 구조는 capture_thread, sensor_thread 그리고 각 미션 쓰레드들로 구성된다. 
+
+<p align="center"><img src="images/thread_architecture.png"></p> 
+<p align="center"> < Thread Architecture ></p>  
