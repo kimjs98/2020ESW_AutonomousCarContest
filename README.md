@@ -80,3 +80,12 @@
 
 <p align="center"><img src="images/thread_architecture.png"></p> 
 <p align="center"> < Thread Architecture ></p>  
+
+- capture_thread는 영상처리 및 주 쓰레드로써 일정 주기마다 sensor_thread를 호출한다. 호출에 따라 sensor_thread가 라인 감지용 IR 센서, 벽을 감지하는 적외선 PSD 센서를 통해 미션을 검출한다. 이때 mode_count에 따라 해당하는 mission에 대한 센서값만을 검출하도록 한다. 
+
+- 조건을 만족하면 각 미션에 해당하는 mission thread를 호출한다. 각 mission thread는 미션을 수행하고, 스스로 종료한다.
+
+### Software Architecture
+<br>
+<p align="center"><img src="images/software_architecture.png"></p> 
+<p align="center"> < Software Architecture ></p> 
