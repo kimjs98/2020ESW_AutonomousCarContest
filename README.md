@@ -1,6 +1,6 @@
 # 2020ESW_AutonomousCarContest
 
-[단국대학교 MAZE](https://maze.co.kr) 영차영차 팀 개발내용
+[MAZE](https://maze.co.kr) 영차영차 팀 개발내용
 
 개발 기간 : 2020.07 ~ 2020.12 
 
